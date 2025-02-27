@@ -305,7 +305,7 @@ def main(args):
         # Make sure trailing sep is in place
         if not args.target_folder.endswith(os.sep):
             args.target_folder += os.sep
-        args.target_base = args.target_folder.split('/')[0]
+        args.target_base = args.target_folder.split(os.sep)[0]
     else:
         args.target_base = 'Shared'
 
